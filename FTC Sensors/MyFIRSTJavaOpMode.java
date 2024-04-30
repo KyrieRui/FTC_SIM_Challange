@@ -79,12 +79,13 @@ stop();
 
 
   // 输出读取的颜色值
-    telemetry.addData("Blue Value (Color2)", blue2);
-    telemetry.addData("Red Value (Color2)", red2);
-    telemetry.update();
+    // telemetry.addData("Blue Value (Color2)", blue2);
+    // telemetry.addData("Red Value (Color2)", red2);
+    // telemetry.update();
     
     // Put run blocks here
     while (opModeIsActive()) {
+
       
     }
   }
