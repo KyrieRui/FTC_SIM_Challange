@@ -83,6 +83,8 @@ stop();
     // telemetry.addData("Red Value (Color2)", red2);
     // telemetry.update();
     
+
+    // telemetry.addData("Distance (cm)", distance1.getDistance(DistanceUnit.CM));
     // Put run blocks here
     while (opModeIsActive()) {
 
