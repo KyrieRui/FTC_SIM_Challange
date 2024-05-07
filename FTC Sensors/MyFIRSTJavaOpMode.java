@@ -88,6 +88,7 @@ stop();
     // Put run blocks here
     while (opModeIsActive()) {
       // Put loop blocks here
+      telemetry.update();
       
     }
   }
