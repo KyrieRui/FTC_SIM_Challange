@@ -90,6 +90,8 @@ stop();
       // Put loop blocks here
       telemetry.update();
       // Put loop blocks here
+      runF(red2*10);
+      
       stop();
     }
   }
