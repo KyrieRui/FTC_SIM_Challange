@@ -93,6 +93,7 @@ stop();
       runF(red2*10);
       runB(red2 * 10);
       stop();
+      break;
     }
   }
   
