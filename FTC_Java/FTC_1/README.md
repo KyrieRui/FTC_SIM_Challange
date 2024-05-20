@@ -24,6 +24,19 @@ System.out.println("Height: " + height);
 System.out.println("Is Student: " + isStudent);
 ```
 
+### final variables
+
+- In Java, the final keyword can be used to declare a variable that cannot be changed after it is initialized.
+- Final variables are also known as constants.
+
+```java
+final int MAX_VALUE = 100;
+final double PI = 3.14159;
+
+System.out.println("Max Value: " + MAX_VALUE);
+System.out.println("PI: " + PI);
+```
+
 ### operators
 
 - Java has several operators that can be used to perform arithmetic, logical, and comparison operations.
@@ -116,4 +129,80 @@ do {
     System.out.println(i);
     i++;
 } while (i <= 5);
+```
+
+### classes and objects
+
+- Java is an object-oriented programming language, which means that it uses classes and objects to model real-world entities.
+- A class is a blueprint for creating objects, and it defines the properties and behaviors of the objects.
+- An object is an instance of a class, and it can be used to access the properties and behaviors defined in the class.
+
+```java
+class Person {
+    String name;
+    int age;
+
+    void displayInfo() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+    }
+}
+
+Person person = new Person();
+person.name = "John";
+person.age = 25;
+person.displayInfo();
+```
+
+### final class
+
+- In Java, the final keyword can be used to declare a class that cannot be subclassed.
+- Final classes are also known as immutable classes.
+
+```java
+public final class MathUtils {
+
+    // Private constructor to prevent instantiation
+    private MathUtils() {
+        throw new UnsupportedOperationException("Cannot instantiate utility class");
+    }
+
+    // Static method for adding two numbers
+    public static int add(int a, int b) {
+        return a + b;
+    }
+
+    // Static method for subtracting two numbers
+    public static int subtract(int a, int b) {
+        return a - b;
+    }
+
+    // Static method for multiplying two numbers
+    public static int multiply(int a, int b) {
+        return a * b;
+    }
+
+    // Static method for dividing two numbers
+    public static int divide(int a, int b) {
+        if (b == 0) {
+            throw new IllegalArgumentException("Division by zero is not allowed.");
+        }
+        return a / b;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        int sum = MathUtils.add(5, 3);
+        int difference = MathUtils.subtract(5, 3);
+        int product = MathUtils.multiply(5, 3);
+        int quotient = MathUtils.divide(5, 3);
+
+        System.out.println("Sum: " + sum);
+        System.out.println("Difference: " + difference);
+        System.out.println("Product: " + product);
+        System.out.println("Quotient: " + quotient);
+    }
+}
+
 ```
