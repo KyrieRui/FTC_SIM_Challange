@@ -206,3 +206,5 @@ public class Main {
 }
 
 ```
+
+## Lesson 2: Object-Oriented Programming (OOP)
