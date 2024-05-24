@@ -208,3 +208,5 @@ public class Main {
 ```
 
 ## Lesson 2: Object-Oriented Programming (OOP)
+
+- Object-oriented programming (OOP) is a programming paradigm that uses objects to model real-world entities.
