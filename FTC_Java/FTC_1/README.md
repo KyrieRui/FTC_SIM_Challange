@@ -210,3 +210,4 @@ public class Main {
 ## Lesson 2: Object-Oriented Programming (OOP)
 
 - Object-oriented programming (OOP) is a programming paradigm that uses objects to model real-world entities.
+- OOP is based on the concepts of classes and objects, which are used to define the properties and behaviors of entities.
