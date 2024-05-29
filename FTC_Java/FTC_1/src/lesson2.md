@@ -254,4 +254,5 @@ motor.isMoving = true;
 
 ```java
 motor.displayInfo();
+// Output:
 ```
