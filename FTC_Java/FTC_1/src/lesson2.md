@@ -257,4 +257,5 @@ motor.displayInfo();
 // Output:
 
 // Direction: Clockwise
+// Area: Front
 ```
