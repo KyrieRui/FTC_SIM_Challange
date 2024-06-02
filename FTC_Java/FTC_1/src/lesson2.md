@@ -259,4 +259,5 @@ motor.displayInfo();
 // Direction: Clockwise
 // Area: Front
 // Speed: 50
+// Is On: true
 ```
