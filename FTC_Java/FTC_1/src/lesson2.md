@@ -12,48 +12,6 @@ int x, y, z;
 int a = 1, b = 2, c = 3;
 ```
 
-### pass variables to other variables
-
-- In Java, you can pass the value of one variable to another variable.
-
-```java
-int x = 10;
-int y = x;
-System.out.println(y); // 10
-```
-
-### primitive types and reference types
-
-- In Java, there are two types of data types: primitive types and reference types.
-- Primitive types are basic data types that store simple values, such as numbers and characters. eg: int, float, double, char, boolean
-- Reference types are more complex data types that store references to objects in memory. eg: String, Array, Class
-
-### primitive types
-
-| Type    | Bytes | Range                                                   |
-| ------- | ----- | ------------------------------------------------------- |
-| byte    | 1     | -128 to 127                                             |
-| short   | 2     | -32,768 to 32,767                                       |
-| int     | 4     | -2,147,483,648 to 2,147,483,647                         |
-| long    | 8     | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 |
-| float   | 4     | 1.4E-45 to 3.4E+38                                      |
-| double  | 8     | 4.9E-324 to 1.8E+308                                    |
-| char    | 2     | 0 to 65,535                                             |
-| boolean | 1     | true or false                                           |
-
-### return type
-
-- In Java, a method can have a return type, which specifies the type of value that the method returns.
-- If a method does not return a value, its return type is void.
-
-```java
-returnType Name(){
-    // code
-}
-```
-
-- some functions can return a value, and some functions can return nothing.
-
 ### void
 
 - void is a return type function that does not return any value.
