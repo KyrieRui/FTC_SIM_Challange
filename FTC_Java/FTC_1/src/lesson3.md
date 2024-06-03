@@ -10,6 +10,15 @@ int y = x;
 System.out.println(y); // 10
 ```
 
+### exercise
+
+- declear a primitive type variable x and set it to 1
+- declear a other primitive type variable y and set it to x
+- change the value of x to 2
+- print the value of y
+
+![Alt text](image-1.png)
+
 ### primitive types and reference types
 
 - In Java, there are two types of data types: primitive types and reference types.
@@ -88,6 +97,149 @@ public class lesson3 {
     public static void main(String[] args) {
         Date now = new Date();
         System.out.println(now);
+    }
+}
+```
+
+### poiint class
+
+- java.awt
+- declear a variable of point1
+- in the point class, there are two member variables x and y
+- declear a variable of point2 and set it to point1
+- use dot function to see the x and y value of point 1
+- change the x value of point1 to 2
+
+- remember that: reference types are copied by reference, not by value.
+- primitive types are copied by value.
+
+### String and string literal
+
+```java
+System.out.println("Hello, World!");
+// this is a string literal or string value.
+
+// try String class from java.lang package
+String str = new String("Hello, World!");
+
+// other short way to declare a string
+String str = "Hello, World!";
+```
+
+#### exercise
+
+- declear two string variables, str1 and str2
+- combine str1 and str2 and store the result in str1
+- print the result
+
+- change the value of str1 to "Java FTC, "
+- combine str1 and str2 and store the result in str1
+- print the result
+
+```java
+public class lesson3 {
+    public static void main(String[] args) {
+        String str1 = "Hello, ";
+        String str2 = "World!";
+        str1 = str1 + str2;
+        System.out.println(str1);
+
+        str1 = "Java FTC, ";
+        str1 = str1 + str2;
+        System.out.println(str1);
+    }
+}
+```
+
+### String class dot operator
+
+- String class has many member functions.
+- str1.endsWith(str2) - check if str1 ends with str2
+- str1.startsWith(str2) - check if str1 starts with str2
+- str1.length() - get the length of str1
+- str1.indexOf(str2) - get the index of str2 in str1
+- str1.replace(str2, str3) - replace str2 with str3 in str1
+
+#### exercise
+
+- find out what is endWith and startWith function return.
+
+- try length function
+- try indexOf function ('h', 'Ray')
+- try replace function ('Hello', 'Hi')
+
+```java
+public class lesson3 {
+    public static void main(String[] args) {
+        String str1 = "Hello, World!";
+        System.out.println(str1.endsWith("World!"));
+        System.out.println(str1.startsWith("Hello"));
+
+        System.out.println(str1.length());
+        System.out.println(str1.indexOf("H"));
+        System.out.println(str1.indexOf("Ray"));
+        System.out.println(str1.replace("Hello", "Hi"));
+
+        // print the original string
+        System.out.println(str1);
+        // the reson why the original string is not changed is because the replace function returns a new string. String in Java is immutable.
+    }
+}
+```
+
+### String class dot operator
+
+- str1.toUpperCase() - convert str1 to uppercase
+- str1.toLowerCase() - convert str1 to lowercase
+- str1.trim() - remove leading and trailing whitespace from str1
+
+#### exercise
+
+- try toUpperCase function
+- try toLowerCase function
+- try trim function
+
+```java
+public class lesson3 {
+    public static void main(String[] args) {
+        String str1 = "Hello, World!";
+        System.out.println(str1.toUpperCase());
+        System.out.println(str1.toLowerCase());
+        System.out.println(str1.trim());
+    }
+}
+```
+
+### back slash
+
+- back slash is an escape character in Java.
+- \n - new line
+- \t - tab
+- \b - backspace
+- \r - carriage return
+- \f - form feed
+- \\ - back slash
+- \' - single quote
+- \" - double quote
+
+#### exercise
+
+- print "Hello, World!" in two lines
+
+```java
+public class lesson3 {
+    public static void main(String[] args) {
+        System.out.println("Hello,\nWorld!");
+    }
+}
+```
+
+- print "Hello, World!" with a tab between Hello, and World!
+
+```java
+public class lesson3 {
+    public static void main(String[] args) {
+        System.out.println("Hello,\tWorld!");
     }
 }
 ```
