@@ -245,3 +245,5 @@ public class lesson3 {
 ```
 
 ### escape character
+
+- if we want to print a back slash, we need to use two back slashes.
