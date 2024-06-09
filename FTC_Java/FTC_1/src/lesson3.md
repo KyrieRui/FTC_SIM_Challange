@@ -247,3 +247,4 @@ public class lesson3 {
 ### escape character
 
 - if we want to print a back slash, we need to use two back slashes.
+- if we want to print a double quote, we need to use a back slash before the double quote.
