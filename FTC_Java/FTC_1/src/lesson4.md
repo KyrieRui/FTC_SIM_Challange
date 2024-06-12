@@ -298,3 +298,5 @@ public class Main {
     }
 }
 ```
+
+- try to create a 2-dimensional array of 2 rows and 3 columns, and set the value of the first element of the first row to 10.
