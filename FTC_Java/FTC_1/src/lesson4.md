@@ -304,3 +304,5 @@ public class Main {
 ```java
 import java.util.Arrays;
 ```
+
+public class Main {
