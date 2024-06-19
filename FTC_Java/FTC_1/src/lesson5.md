@@ -274,3 +274,56 @@ public class ScannerExample05 {
     }
 }
 ```
+
+### else-if
+
+- if the condition is false, the code inside the else block will be executed.
+
+third syntax:
+
+```java
+
+if (condition1) {
+    // code block
+} else if (condition2) {
+    // code block
+} else {
+    // code block
+}
+
+// eg
+int myScore = 70;
+if (myScore < 60) {
+    System.out.println("I am gona to die");
+} else if (myScore < 80) {
+    System.out.println("I am safe");
+} else {
+    System.out.println("I am the king");
+}
+System.out.println("Hope my mom won't kill me");
+```
+
+#### Exercise 7
+
+- write a program that asks the user to input a number and then print out if the number is positive, negative or zero.
+
+```java
+import java.util.Scanner;
+
+public class ScannerExample06 {
+    public static void main(String[] args) {
+        System.out.println("Program start.... \n");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please input a number: ");
+        int number = sc.nextInt();
+        if (number > 0) {
+            System.out.println("\nThe number is positive.");
+        } else if (number < 0) {
+            System.out.println("\nThe number is negative.");
+        } else {
+            System.out.println("\nThe number is zero.");
+        }
+        System.out.println("\nThe program is done.");
+    }
+}
+```
