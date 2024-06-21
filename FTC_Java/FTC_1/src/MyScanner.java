@@ -10,3 +10,4 @@ public class MyScanner {
         System.out.println("The decimal part of the double number is: " + decimal);
     }
 }
+
