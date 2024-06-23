@@ -1,18 +1,64 @@
-## Getting Started
+## Term 1 final project: Sanke Game
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+### Create Java project
 
-## Folder Structure
+1. 'control + shift + p' to open command palette
+2. 'Java: Create Java Project'
+3. 'SnakeGame' as project name
+4. 'src' as source folder
 
-The workspace contains two folders by default, where:
+### WindowBuilder
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+    - go to App.java, delete the code in main method
+    - import javax.swing.*;
+    - goto main function, define some variables:
+        - int boardWidth = 600;
+        - int boardHeight = boardWidth;
+        - JFrame frame = new JFrame("Snake Game");
+        - frame.setVisible(true);
+        - frame.setSize(boardWidth, boardHeight);
+        - frame.setLocationRelativeTo(null); // open in the center of the screen
+        - frame.setResizable(false);
+        - frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // close the window when user click the close button
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### JPanel
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+    - after we have window, we need to add a panel to the window
+    - the JPanel is for draw our game
+    - create a new file called 'SnakeGame.java'
 
-## Dependency Management
+```java
+import java.awt.*;
+import java.awt.event.*;
+import java.util.ArrayList; // store the sagments of the snake body
+import java.util.Random; // generate random x and y coordinates for the food
+import javax.swing.*;
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+/**
+ * The SnakeGame class is the inherited class of JPanel.
+ * It for drawing the snake and food on the screen.
+ * <p>
+ * The main method initializes the JFrame and configures its properties.
+ * </p>
+ *
+ * @author Your Name
+ * @version 1.0
+ */
+public class SnakeGame extends JPanel{
+    // class variables
+    int boardWidth;
+    int boardHeight;
+
+    // constructor
+    // the two parameters are the width and height of the board
+    public SnakeGame(int boardWidth, int boardHeight) {
+        this.boardWidth = boardWidth;
+        this.boardHeight = boardHeight;
+
+        // set the size of the panel
+        setPreferredSize(new Dimension(boardWidth, boardHeight));
+        setBackground(Color.BLACK);
+    }
+
+}
+```
