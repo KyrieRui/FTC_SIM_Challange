@@ -15,10 +15,19 @@ import javax.swing.*;
  * @version 1.0
  */
 public class SnakeGame extends JPanel{
+    private class Tile{
+        int x;
+        int y;
+        Tile(int x, int y){
+            this.x = x;
+            this.y = y;
+        }
+    }
     // class variables
     int boardWidth;
     int boardHeight;
 
+    Tile snakeHead;
     // constructor
     // the two parameters are the width and height of the board
     public SnakeGame(int boardWidth, int boardHeight) {
@@ -28,6 +37,8 @@ public class SnakeGame extends JPanel{
         // set the size of the panel
         setPreferredSize(new Dimension(boardWidth, boardHeight));
         setBackground(Color.BLACK);
+
+        snakeHead = new Tile(5, 5);
     }
     
 }

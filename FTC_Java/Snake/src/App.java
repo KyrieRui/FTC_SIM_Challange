@@ -19,8 +19,11 @@ import javax.swing.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        
         int boardWidth = 600;
         int boardHeight = boardWidth;
+        int tileSize = 25;
+
         JFrame frame = new JFrame("Snake Game");
         frame.setVisible(true);
         frame.setSize(boardWidth, boardHeight);
@@ -31,5 +34,6 @@ public class App {
         // add the Instance of SnakeGame panel to the frame
         SnakeGame snakeGame = new SnakeGame(boardWidth, boardHeight);
         frame.add(snakeGame);
+        frame.pack();
     }
 }

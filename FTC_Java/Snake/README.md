@@ -62,3 +62,19 @@ public class SnakeGame extends JPanel{
 
 }
 ```
+
+### Tile
+
+    in the SnakeGame class, we need to create a Tile class to store the x and y coordinates of the snake and food
+    - create a new file called 'Tile.java'
+
+```java
+private class Tile{
+        int x;
+        int y;
+        Tile(int x, int y){
+            this.x = x;
+            this.y = y;
+        }
+    }
+```
