@@ -152,3 +152,14 @@
           System.out.println("Motor is stopped");
       }
   ```
+
+### if-else
+
+```java
+    int speed = 50;
+    if (speed > 0) {
+        System.out.println("Motor is moving");
+    } else {
+        System.out.println("Motor is stopped");
+    }
+```
