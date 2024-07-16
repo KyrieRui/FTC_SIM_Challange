@@ -214,3 +214,11 @@
         i++;
     } while (i < 5);
 ```
+
+### for
+
+```java
+    for (int i = 0; i < 5; i++) {
+        System.out.println(i);
+    }
+```
