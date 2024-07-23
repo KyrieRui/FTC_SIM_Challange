@@ -1,12 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        // 创建一个对象
-        Dog myDog = new Dog("Buddy", 3);
-        
-        // 访问对象的属性和方法
-        System.out.println("Name: " + myDog.getName());
-        System.out.println("Age: " + myDog.getAge());
-        myDog.makeSound(); // 输出 "Woof woof"
+        String x = "1"; 
+        int y = (int)x + 2; // Explicit casting
+        //vbyte -> short -> int -> long
     }
 }
 
