@@ -170,3 +170,5 @@ double result = Math.ceil(1.1F); // 2.0
 ```
 
 https://shorturl.at/2qmUw
+
+#### floor()
