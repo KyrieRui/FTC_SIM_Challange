@@ -5,47 +5,47 @@ public class Tetris2 {
     public static void main(String[] args) {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
-                // 创建窗口
+                // Create a window
                 JFrame frame = new JFrame();
                 frame.setTitle("Tetris");
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                frame.setSize(305, 525); // 设置窗口大小
-                frame.setLocationByPlatform(true); // 窗口位置由平台决定
+                frame.setSize(305, 525); // Set the window size
+                frame.setLocationByPlatform(true); // Let the system decide the window location
 
-                // 创建自定义绘图面板
+                // Create a custom drawing panel
                 CustomPanel canvas = new CustomPanel();
-                canvas.setBackground(Color.WHITE); // 设置画布背景为白色
-                frame.add(canvas); // 将绘图面板添加到窗口
+                canvas.setBackground(Color.WHITE); // Set the canvas background to white
+                frame.add(canvas); // Add the canvas to the window
 
-                System.out.println("Canvas added to frame"); // 调试输出
+                System.out.println("Canvas added to frame"); // Debug output
 
-                frame.setVisible(true); // 窗口可见
+                frame.setVisible(true); // Make the window visible
             }
         });
     }
 }
 
-// 自定义绘图面板
+// Custom drawing panel
 class CustomPanel extends JPanel {
     private static final long serialVersionUID = 1L;
 
     public CustomPanel() {
-        System.out.println("Canvas constructor called"); // 调试输出
+        System.out.println("Canvas constructor called"); // Debug output
     }
 
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        System.out.println("paintComponent called"); // 调试输出
-        System.out.println("Canvas size: " + getWidth() + "x" + getHeight()); // 输出画布大小
+        System.out.println("paintComponent called"); // Debug output
+        System.out.println("Canvas size: " + getWidth() + "x" + getHeight()); // Output canvas size
 
         Graphics2D g2 = (Graphics2D) g;
-        g2.setColor(Color.BLACK); // 设置颜色为黑色
+        g2.setColor(Color.BLACK); // Set color to black
 
-        // 在面板上绘制一个正方形
-        int size = 50; // 正方形的边长
-        int x = (getWidth() - size) / 2; // 计算正方形左上角的x坐标，使其居中
-        int y = (getHeight() - size) / 2; // 计算正方形左上角的y坐标，使其居中
-        g2.fillRect(x, y, size, size); // 绘制正方形
+        // Draw a square in the center of the panel
+        int size = 50; // Size of the square
+        int x = (getWidth() - size) / 2; // Calculate x coordinate to center the square
+        int y = (getHeight() - size) / 2; // Calculate y coordinate to center the square
+        g2.fillRect(x, y, size, size); // Draw the square
     }
 }

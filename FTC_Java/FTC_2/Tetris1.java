@@ -9,14 +9,15 @@ public class Tetris1
         {
             public void run()
             {
-                // 创建窗口
+                // Create a window
                 JFrame frame = new JFrame();
                 frame.setTitle("Tetris");
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                frame.setSize(525, 525); // 设置窗口大小
-                frame.setLocationByPlatform(true); // 窗口位置由平台决定
-                frame.setVisible(true); // 窗口可见
+                frame.setSize(525, 525); // Set the window size
+                frame.setLocationByPlatform(true); // Let the system decide the window location
+                frame.setVisible(true); // Make the window visible
             }
         });
     }
 }
+
