@@ -266,6 +266,7 @@ class Canvas extends JComponent
 	{
 		super.paintComponent(g);
 		Graphics2D g2 = (Graphics2D) g;
+		g2.setColor(Color.RED);
 		for (int i = 0; i < GameWindow.VERTICAL_NODES; i ++)
 		{
 			for (int j = 0; j < GameWindow.HORIZON_NODES; j ++)
