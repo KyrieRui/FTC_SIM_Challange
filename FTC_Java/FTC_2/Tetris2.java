@@ -49,3 +49,5 @@ class CustomPanel extends JPanel {
         g2.fillRect(x, y, size, size); // Draw the square
     }
 }
+
+// Output:
