@@ -277,3 +277,5 @@ class Canvas extends JComponent
 		}
 	}
 }
+
+// Output:
