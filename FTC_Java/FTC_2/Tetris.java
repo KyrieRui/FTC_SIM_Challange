@@ -279,3 +279,4 @@ class Canvas extends JComponent
 }
 
 // Output:
+// 游戏结束，你的得分为0
