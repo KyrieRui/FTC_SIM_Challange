@@ -14,6 +14,7 @@
 - in this class we have alot classes for handling text date and numbers so on
 - we want to declar a variable of type NumberFormat, first give it a name
 - we will see a error after the 'new NumberFormat' because it is an abstract class
+
 - in Java we have this abstract classes that we can't create an object from
 - they basicly like a half-baked cake, so we can not use a new operator to create an object from it
 - we have to use a class that extends this abstract class, but for now we just need to udnerstand that we can't create an object from it
@@ -21,6 +22,7 @@
 - use dot operator and type 'getNumberInstance' and then a pair of parentheses
 - when we call it, it will create a instance of a class that extends NumberFormat and return it
 - this is what we call 'a factory method'
+
 - we store it in a variable of type NumberFormat and give it a name
 - call the dot operator on the variable and type 'format' and then a pair of parentheses
 - pass a value to the parentheses, this is the number that we want to format
