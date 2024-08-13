@@ -166,3 +166,5 @@ if (number % 5 == 0 && number % 3 == 0) {
     System.out.println(number);
 }
 ```
+
+### Exercise: Mortgage Calculator
