@@ -62,10 +62,13 @@ public void stop() {
       distance1 = hardwareMap.get(DistanceSensor.class, "distance1");
       imu = hardwareMap.get(BNO055IMU.class, "imu");
       // Put initialization blocks here
+      motorLeft.setDirection(DcMotor.Direction.REVERSE);
       waitForStart();
       // Put run blocks here
       turnRight(400);
       slowLeft(800);
+
+    
         
       nomalLeft(1600);
         
