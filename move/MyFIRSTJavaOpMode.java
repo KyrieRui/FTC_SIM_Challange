@@ -90,7 +90,7 @@ public void stop() {
       while (opModeIsActive()) {
         // Put loop blocks here
         while () {
-            
+            // DC motor
         }
       }
     }
