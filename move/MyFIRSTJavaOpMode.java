@@ -91,6 +91,7 @@ public void stop() {
         // Put loop blocks here
         while () {
             // DC motor
+            motorLeft
         }
       }
     }
