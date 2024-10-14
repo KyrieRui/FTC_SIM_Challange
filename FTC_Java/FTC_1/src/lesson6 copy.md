@@ -14,6 +14,12 @@
         String direction;
         int speed;
 
+        // constructor
+        public Motor(String direction, int speed) {
+            this.direction = direction;
+            this.speed = speed;
+        }
+
         // class method
         public void displayInfo() {
             System.out.println("Motor Direction: " + direction);
