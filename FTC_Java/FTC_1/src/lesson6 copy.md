@@ -81,8 +81,8 @@
   - A return type is defined in the method signature.
 
   ```java
-      public int getSpeed() {
-          return speed;
+      public int getDirection() {
+          return Direction;
       }
   ```
 
