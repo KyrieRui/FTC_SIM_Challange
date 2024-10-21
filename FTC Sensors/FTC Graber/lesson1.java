@@ -16,18 +16,7 @@ public class MyFIRSTJavaOpMode extends LinearOpMode {
     ColorSensor color1;
     DistanceSensor distance1;
     BNO055IMU imu;
-    
-    public void runF(int time){
-        driveLeft.setPower(1);
-        driveRight.setPower(1);
-        sleep(time);
-    }
-    
-    public void stop() {
-        driveLeft.setPower(0);
-        driveRight.setPower(0);
-    }
-    
+
 @Override
     public void runOpMode() {
       driveLeft = hardwareMap.get(DcMotor.class, "driveLeft");
@@ -37,17 +26,31 @@ public class MyFIRSTJavaOpMode extends LinearOpMode {
       color1 = hardwareMap.get(ColorSensor.class, "color1");
       distance1 = hardwareMap.get(DistanceSensor.class, "distance1");
       imu = hardwareMap.get(BNO055IMU.class, "imu");
-      
       // Put initialization blocks here
       waitForStart();
+      // Put run blocks here
       grabber.setPosition(0.25);
       driveLeft.setDirection(DcMotor.Direction.REVERSE);
-      runF(500);
-      stop();
+      driveLeft.setPower(0.3);
+      driveRight.setPower(0.9);
       sleep(1700);
-      // Put run blocks here
-     
-
+      grabber.setPosition(0);
+      driveLeft.setPower(-1);
+      driveRight.setPower(-1);
+      sleep(700);
+      grabber.setPosition(1);
+      sleep(160);
+      driveLeft.setPower(-1);
+      driveRight.setPower(-0.4);
+      sleep(1500);
+      driveLeft.setPower(-1);
+      driveRight.setPower(0.3);
+      sleep(700);
+      driveLeft.setPower(-1);
+      driveRight.setPower(-1);
+      sleep(700);
+      driveLeft.setPower(0);
+      driveRight.setPower(0);
     }
     
 }
