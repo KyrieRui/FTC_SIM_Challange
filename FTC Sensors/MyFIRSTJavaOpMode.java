@@ -40,7 +40,7 @@ public class MyFIRSTJavaOpMode extends LinearOpMode {
       
       // Put initialization blocks here
       waitForStart();
-      grabber.setPosition(0.25);
+      grabber.setPosition(0);
       driveLeft.setDirection(DcMotor.Direction.REVERSE);
       runF(500);
       stop();
