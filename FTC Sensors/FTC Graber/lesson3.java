@@ -29,10 +29,18 @@ public class MyFIRSTJavaOpMode extends LinearOpMode {
         stop();
     }
 
+    public void rightT(int time){
+        driveLeft.setPower(1);
+        driveRight.setPower(-1);
+        sleep(time);
+        stop();
+    }
+
     public void goF(int time) {
         driveLeft.setPower(0.5);
         driveRight.setPower(0.5);
-        
+        sleep(time);
+        stop();
     }
 
 @Override
