@@ -23,15 +23,15 @@ public class MyFIRSTJavaOpMode extends LinearOpMode {
     }
 
     public void leftT(int time){
-        driveLeft.setPower(-1);
-        driveRight.setPower(1);
+        driveLeft.setPower(-0.6);
+        driveRight.setPower(0.6);
         sleep(time);
         stop();
     }
 
     public void rightT(int time){
-        driveLeft.setPower(1);
-        driveRight.setPower(-1);
+        driveLeft.setPower(0.6);
+        driveRight.setPower(-0.6);
         sleep(time);
         stop();
     }
@@ -57,6 +57,9 @@ public class MyFIRSTJavaOpMode extends LinearOpMode {
       // Put run blocks here
       grabber.setPosition(0.25);
       driveLeft.setDirection(DcMotor.Direction.REVERSE);
+      
+      goF(400);
+      rightT(280);
       
     }
     
