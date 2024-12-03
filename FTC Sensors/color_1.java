@@ -17,23 +17,23 @@ public class MyFIRSTJavaOpMode extends LinearOpMode {
     DistanceSensor distance1;
     BNO055IMU imu;
     
-public void stop() {
-    motorLeft.setPower(0);
-    motorRight.setPower(0);
-}
+  public void stop(DcMotor ml, DcMotor mr) {
+      ml.setPower(0);
+      mr.setPower(0);
+  }
 
-public void leftT(int time){
-    motorLeft.setPower(-1);
-    motorRight.setPower(1);
-    sleep(time);
-    stop();
-}
+  public void leftT(int time){
+      motorLeft.setPower(-1);
+      motorRight.setPower(1);
+      sleep(time);
+      stop();
+  }
 
-public void goF(int time) {
-      motorLeft.setPower(0.5);
-      motorRight.setPower(0.5);
-      
-}
+  public void goF(int time) {
+        motorLeft.setPower(0.5);
+        motorRight.setPower(0.5);
+        
+  }
 
 @Override
     public void runOpMode() {
